@@ -4,6 +4,8 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import location2 from '../../assets/location_current.svg';
 import location from '../../assets/location_image 1.png';  
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
  
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const DefaultIcon = L.Icon.Default as any;
