@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ss/common-components": ["libs/src/index.ts"],
+      "authentication/Module": ["apps/authentication/src/remote-entry.ts"],
+      "checkout/Module": ["apps/checkout/src/remote-entry.ts"],
+      "dashboard/Module": ["apps/dashboard/src/remote-entry.ts"],
+      "property/Module": ["apps/property/src/remote-entry.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

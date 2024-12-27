@@ -1,0 +1,127 @@
+
+.cart-checkout-page {
+  padding: 1.5rem 0;
+}
+
+.cart-section {
+  margin-bottom: 1.5rem;
+
+  &__title {
+    padding: 1rem;
+    font-weight: var( --FONT-WEIGHT-BOLD);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 48rem) {
+      flex-direction: row;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    width: 100%;
+
+max-width: 18.75rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 48rem) {
+      margin-bottom: 0;
+      margin-right:1rem;
+    }
+  }
+
+  &__image {
+    border-radius: var(--BORDER-RADIUS-MD);
+  }
+
+  &__ar-chip {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  &__details {
+    flex: 1;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0.5rem;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    svg {
+      margin: 0 0.25rem;
+    }
+  }
+
+  &__dates {
+    display: flex;
+    justify-content: space-between;
+    margin:1rem 0;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom:1rem;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.traveller-details {
+  margin-bottom: 1.5rem;
+
+  &__title {
+    padding: 1rem;
+    font-weight: var( --FONT-WEIGHT-BOLD);
+  }
+
+  &__item {
+    border-bottom:0.0625rem solid var(--BORDER_COLOR);
+  }
+
+  &__add-button {
+    margin-top: 1rem;
+  }
+}
+
+.checkout-section {
+  &__title {
+    padding: 1rem;
+    font-weight: var( --FONT-WEIGHT-BOLD);
+  }
+
+  &__item {
+    padding: 0.5rem 0;
+  }
+
+  &__coupon {
+    margin: 1rem 0;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin:1rem 0;
+    font-weight: var( --FONT-WEIGHT-BOLD);
+  }
+
+  &__confirm-button {
+    margin-top: 1rem;
+  }
+}

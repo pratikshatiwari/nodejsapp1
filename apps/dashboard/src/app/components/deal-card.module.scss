@@ -1,0 +1,110 @@
+.dealCard {
+  padding: 16px;
+  box-shadow: 0px 10px 20px var(--PRIMARY_SHADOW) !important;
+  border-radius: var(--BORDER-RADIUS-LG) !important;
+
+  .image {
+    height: 65px;
+    width: 65px;
+    border-radius: var(--BORDER-RADIUS-LG) !important;
+    object-fit: cover;
+  }
+
+  .textPrimary {
+    text-align: left;
+    font-family: var(--PRIMARY-FONT);
+    font-size: var(--FONT-SIZE-XS);
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    letter-spacing: 0.6px;
+    color: var(--PRIMARY);
+    opacity: 1;
+  }
+
+  .title {
+    text-align: left;
+    font-family: var(--PRIMARY-FONT);
+    font-size: var(--FONT-SIZE-SM);
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    letter-spacing: 0.7px;
+    color: var(--BLACK);
+    opacity: 1;
+  }
+
+  .location {
+    text-align: left;
+    font-family: var(--PRIMARY-FONT);
+    font-size: var(--FONT-SIZE-XS);
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    letter-spacing: 0.6px;
+    color: var(--BLACK);
+    opacity: 1;
+  }
+
+  .ratingContainer {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .starIcon {
+      color: var(--COLOR_STAR);
+    }
+
+    .rating {
+      text-align: left;
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-XS);
+      font-weight: var(--FONT-WEIGHT-BOLD);
+      letter-spacing: 0.6px;
+      color: var(--BLACK);
+      opacity: 1;
+    }
+
+    .best {
+      width: 30px;
+      height: 20px;
+      text-align: left;
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-SM);
+      font-weight: var(--FONT-WEIGHT-BOLD);
+      color: var(--GREEN_TEXT);
+      opacity: 1;
+    }
+
+    .reviewCount {
+      margin-top: 5px !important;
+      margin-left: 5px !important;
+      text-align: left;
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-XS);
+      font-weight: var(--FONT-WEIGHT-BOLD);
+      letter-spacing: 0.6px;
+      color: var(--BLACK);
+      opacity: 1;
+    }
+  }
+
+  .priceContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    .price {
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-H1);
+      font-weight: var(--FONT-WEIGHT-BOLD);
+      text-align: right;
+      margin-right: 5px;
+      color: var(--PRIMARY);
+    }
+
+    .night {
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-LG);
+      font-weight: var(--FONT-WEIGHT-BOLD);
+      text-align: left;
+      color: var(--PRIMARY);
+    }
+  }
+}

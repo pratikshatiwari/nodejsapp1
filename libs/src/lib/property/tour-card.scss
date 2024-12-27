@@ -1,0 +1,131 @@
+// Variables
+$card-max-width: 290px;
+$card-margin: 8px;
+$card-border-radius: 16px;
+$white: #ffffff;
+$primary-color: #1976d2;
+$text-primary: rgba(0, 0, 0, 0.87);
+$text-secondary: rgba(0, 0, 0, 0.6);
+
+.tour-card {
+  max-width: $card-max-width;
+  margin: $card-margin;
+  position: relative;
+  overflow: hidden;
+  border-radius: $card-border-radius;
+  
+  &__checkbox{
+    position:absolute !important;
+    left:12rem;
+    top:10px;
+  }
+
+  &__must-see-chip {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: $white !important;
+    color: $text-primary;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    
+    .MuiSvgIcon-root {
+      margin-right: 4px;
+    }
+  }
+
+  &__ar-badge {
+    position: absolute;
+    top: 8rem;
+    left: 10px;
+    background-color: $primary-color;
+    color: $white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  &__media {
+    height: 200px;
+  }
+
+  // &__content {
+  //   padding: 16px;
+  // }
+
+  &__category {
+    margin-bottom: 8px;
+    background-color:skyblue !important;
+    color: blue;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    color: $text-secondary;
+    margin-bottom: 16px;
+  }
+
+  &__cancellation {
+    display: flex;
+    align-items: center;
+    color: blue;
+  }
+
+  &__languages {
+    display: flex;
+    align-items: center;
+
+    .MuiSvgIcon-root {
+      margin-right: 8px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    .MuiRating-root {
+      margin-right: 4px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+
+    &-label {
+      color: $text-secondary;
+      margin-right: 4px;
+    }
+
+    &-value {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+}
+
+.tour-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ar-icon {
+    position: absolute;
+    left : .5rem;
+    top: 9.5rem;
+    z-index: 1;
+}

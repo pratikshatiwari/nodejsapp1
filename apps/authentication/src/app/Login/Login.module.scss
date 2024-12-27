@@ -1,0 +1,81 @@
+.customHr {
+    border: .001rem solid var(--BORDER_COLOR);
+    width: 100%;
+}
+
+.LoginContainer {
+    align-self: center;
+    justify-self: center;
+    background: var(--PRIMARY_BACKGROUND) 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0.75rem 1.5rem var(--PRIMARY_SHADOW);
+    border-radius: var(--BORDER-RADIUS-LG) !important;
+    opacity: 1;
+    padding: 2rem;
+    width: 100%;
+    max-width: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+
+}
+
+.loginTitle {
+    text-align: left !important;
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    font-size: var(--FONT-SIZE-H2) !important;
+    font-family: var(--PRIMARY-FONT) !important;
+}
+
+.head {
+    margin-bottom: 1rem;
+}
+
+.inputRow {
+    margin-bottom: 1rem;
+}
+
+.inputField {
+    width: 100% !important;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cancelButton,
+.loginButton {
+    width: 50%;
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+}
+
+
+.label1 {
+    font: normal normal var(--FONT-WEIGHT-BOLD) var(--FONT-SIZE-H5) var(--PRIMARY-FONT) !important;
+    color: var(--BLACK) !important;
+    opacity: 1;
+}
+
+.AppContainer {
+    padding: 1% 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+}
+
+.HeaderContainer {
+    margin-bottom: 0.625rem;
+}
+
+.Full {
+    min-width: 100vw;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

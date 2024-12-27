@@ -1,0 +1,153 @@
+.customHr {
+    border: 0.05px solid var(--BORDER_COLOR);
+    width: 100%;
+}
+
+.createAccountTitle {
+    // text-align: left !important;
+    // font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    letter-spacing: 0 !important;
+}
+
+.facebookButton,
+.googleButton {
+    width: 100% !important;
+    padding: 0.75rem !important;
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    background-color: transparent !important;
+    transition: var(--WHITE) 0.3s ease !important;
+}
+
+// .facebookButton:hover,
+// .googleButton:hover {
+//     background-color: var(--PRIMARY) !important;
+//     color: var(--WHITE) !important;
+// }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.form {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formContainer {
+    align-items: center;
+    width: 100%;
+    max-width: 28rem;
+    padding: 1rem;
+    background: var(--WHITE);
+    box-shadow: 0px 0.75rem 1.5rem var(--PRIMARY_SHADOW);
+    border-radius: var(--BORDER-RADIUS-LG);
+    margin: 0.625rem auto 0;
+}
+
+.loginContainer {
+    width: 100%;
+    max-width: 28rem;
+    background: var(--WHITE);
+    box-shadow: 0px 0.75rem 1.5rem var(--PRIMARY_SHADOW);
+    padding: 1.75rem 1.3rem;
+    align-items: center;
+    border-radius: var(--BORDER-RADIUS-XXS);
+    margin-top: 0.95rem;
+}
+
+.header,
+.buttonWrapper,
+.emailWrapper {
+    width: 100%;
+    margin: 0 auto 1.25rem auto;
+}
+
+.emailText {
+    color: var(--PLACEHOLDER_TEXT_COLOR);
+    text-shadow: 0px 0.1875rem 0.375rem var(--PRIMARY_SHADOW);
+}
+
+// .inputRow {
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 100% !important;
+//     margin: 0.5rem auto;
+// }
+
+.label {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    color: var(--BLACK);
+}
+
+.inputField {
+    width: 100% !important;
+}
+
+.checkboxRow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.checkboxLabel {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+}
+
+.submitButtonWrapper {
+    width: 100%;
+}
+
+.innerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.haveAccountText {
+    text-align: left;
+    font-size: var(--font-size-caption);
+    line-height: calc(var(--font-size-caption) * 1.5);
+    color: var(--PLACEHOLDER_TEXT_COLOR);
+}
+
+.loginText {
+    text-align: center;
+    font-size: var(--font-size-login-text);
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    line-height: calc(var(--font-size-login-text) * 1.5625);
+    color: var(--PRIMARY);
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .header,
+    .buttonWrapper,
+    .emailWrapper,
+    .form,
+    .inputRow,
+    .checkboxRow {
+        width: 100%;
+    }
+}
+
+.AppContainer {
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+}
+
+
+.Full {
+    // min-width: 100vw;
+}

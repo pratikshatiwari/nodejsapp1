@@ -1,0 +1,332 @@
+.dialog-container {
+  & .MuiDialog-paper {
+    width: 62.5rem;
+    height: 30.25rem;
+    z-index: 99;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--PRIMARY_OVERLAY_COLOR);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+.chip {
+  height: 22px;
+  background: var(--PRIMARY_CHIP_COLOR) !important;
+  border-radius: var(--BORDER-RADIUS-LG);
+  opacity: 1;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+
+  .MuiChip-label {
+    text-align: left;
+    font-family:  var(--PRIMARY-FONT);
+    font-size: var(--FONT-SIZE-XS);
+    font-weight: var(--FONT-WEIGHT-NORMAL);
+    letter-spacing: 0px;
+    color: var(--PRIMARY_LABEL);
+    opacity: 0.8;
+    white-space: nowrap;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  margin-top: 28px;
+
+  .header-title-popup {
+    font-family: var(--PRIMARY-FONT) !important;
+    font-size: var(--FONT-SIZE-BODY-LG) !important;
+    font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+    position: relative;
+    left: 10px;
+    width: 71px;
+    height: 28px;
+    text-align: left;
+    opacity: 1;
+  }
+
+  .close-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+
+.card-container {
+  display: contents;
+  overflow-y: hidden;
+
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .custom-card {
+      width: 967px;
+      height: 62px;
+      border-radius: var(--BORDER-RADIUS-XLLL);
+      padding: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      box-shadow: 0px 8px 16px var(--PRIMARY_SHADOW);
+      overflow: visible;
+      position: relative;
+    }
+  }
+}
+
+
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  flex-basis: 30%;
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    .location-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .text-wrapper {
+    .location-typography {
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-XS);
+      font-weight: var(--FONT-WEIGHT-NORMAL);
+      color:var(--PRIMARY_LABEL);
+      opacity: 0.8;
+      margin-left: 3px !important;
+    }
+  }
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 40%;
+
+  .icon-wrapper {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+    .calendar-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .text-wrapper {
+    .date-typography {
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-XS);
+      font-weight:  var(--FONT-WEIGHT-NORMAL);
+      color: var(--PRIMARY_LABEL);
+      opacity: 0.8;
+    }
+  }
+}
+.travellers-container {
+  display: flex;
+  align-items: center; 
+  flex-basis: 30%; 
+  margin-left: 25px;
+
+  .icon-wrapper {
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+
+    .profile-icon {
+      width: 24px; 
+      height: 24px;
+    }
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .travellers-typography {
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-XS);
+      font-weight: var(--FONT-WEIGHT-NORMAL);
+      color: var(--PRIMARY_LABEL);
+      opacity: 0.8;
+      margin-bottom: 5px; 
+    }   
+  }
+}
+.search-icon-wrapper-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-right: 5px; 
+  
+  .search-icon-popup {
+    width: 48px;
+    height: 48px;
+    cursor: pointer; 
+  }
+}
+.action-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-left: 26px;
+
+  .action-group {
+    display: flex;
+    align-items: center;
+
+    .checkbox-container {
+      margin-right: 8px;
+
+      .custom-checkbox {
+        padding: 0;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .label {
+      width: auto;
+      height: 19px;
+      text-align: left;
+      font-family: var(--PRIMARY-FONT);
+      font-size: var(--FONT-SIZE-SM);
+      font-weight: var(--FONT-WEIGHT-NORMAL);
+      letter-spacing: 0;
+      color: var(--PRIMARY_BUTTON_HOVER);
+      opacity: 1;
+      margin-top: 5px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-left: 24px;
+    }
+  }
+
+  .reset {
+    width: 42px;
+    height: 23px;
+    text-align: center;
+    letter-spacing: -0.38px;
+    opacity: 1;
+  }
+}
+
+.recent-search-container {
+  .divider-container {
+    margin-top: 25px;
+  
+    .divider {
+      height: 1px; 
+      background-color: var(--DIVIDER_BORDER);
+      width: 100%; 
+    }
+  }
+  
+
+  .recent-search-title {
+    margin-top: 18px;
+    margin-left: 20px !important;
+
+    .title {
+      width: 196px;
+      height: 16px;
+      text-align: left;
+      letter-spacing: -0.34px;
+      opacity: 1;
+    }
+  }
+}
+
+.recent-and-most-search-container {
+  margin-left: 20px !important;
+
+  .recent-search-chips {
+    margin-top: 18px;
+
+    .chips-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+  }
+
+  .most-search-title {
+    margin-top: 20px;
+
+    .title {
+      width: 196px;
+      height: 16px;
+      text-align: left;
+      letter-spacing: -0.34px;
+      opacity: 1;
+    }
+  }
+}
+
+.most-search-chips-container {
+  margin-top: 18px;
+  margin-left: 20px !important;
+  overflow-y: hidden; 
+
+  .chips-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+}
+
+.custom-checkbox {
+  color: var(--PRIMARY_CHECKBOX) !important;
+
+  &.Mui-checked {
+    color: var(--PRIMARY);
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+html {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}

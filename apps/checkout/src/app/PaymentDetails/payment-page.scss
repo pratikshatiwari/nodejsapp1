@@ -1,0 +1,14 @@
+.payment-details {
+  margin-top: 1.5rem;
+
+  &__title {
+    margin-left: 1rem !important;
+  }
+}
+
+.grid-box {
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem !important;
+  padding: 0 2rem;
+}

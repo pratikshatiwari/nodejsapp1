@@ -1,0 +1,166 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 21.875rem;
+  margin-bottom: 1.25rem;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: var(--SECONDARY_OVERLAY_COLOR);
+    height: 100%;
+    width: 100%;
+    opacity: 0.65;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 21.875rem;
+  object-fit: cover;
+}
+
+.textContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--WHITE);
+  max-width: 80rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+.title {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  color: var(--WHITE);
+  text-transform: uppercase !important;
+  opacity: 1;
+}
+
+.description {
+  text-align: center;
+  align-self: center;
+  letter-spacing: 0.1rem !important;
+  color: var(--WHITE) !important;
+  opacity: 1;
+  margin-top: 0.625rem;
+  max-width: 90%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--FONT-SIZE-H2); /* Reduce font size on smaller screens */
+  }
+
+  .description {
+    font-size: var(--FONT-SIZE-H4);
+  }
+
+  .textContainer {
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: var(--FONT-SIZE-H4);
+  }
+
+  .description {
+    font-size: var(--FONT-SIZE-SM);
+  }
+
+  .textContainer {
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+
+.hr {
+  width: 100%;
+  margin: 1.875rem 0; 
+  border: 0.5px solid var(--INPUT_BORDER_COLOR);
+}
+
+.servicesContainer {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%; 
+}
+
+.guestFav {
+  display: flex;
+  align-items: center;
+}
+
+.badgeIcon {
+  margin-right: 1.25rem; 
+}
+
+.badgeText {
+  text-align: left;
+}
+
+.badgeHeading {
+  width: 7.3125rem; 
+  font-size: var(--FONT-SIZE-LG) !important;
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+}
+
+.badgeDescription {
+  width: 14.25rem;
+  font-size: var(--FONT-SIZE-H5) !important;
+  // color: var(--BADGE-COLOR) !important;
+  padding-top: 0.75rem;
+  border-top: .5px solid var(--INPUT_BORDER_COLOR) !important;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  // width: 100%;
+  
+  gap: 1.25rem; 
+}
+
+.serviceItem {
+  flex: 1 1 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+
+.serviceLabel {
+  font-size: var(--FONT-SIZE-H5) !important;
+  text-align: center;
+  margin-top: 0.625rem 0 !important;
+}
+
+span {
+  font-weight: var(--FONT-WEIGHT-BOLD);
+}

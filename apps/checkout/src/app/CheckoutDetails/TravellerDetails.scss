@@ -1,0 +1,67 @@
+
+
+.traveller-details {
+  background-color: var(--WHITE) !important;
+  // border-radius: var(--BORDER-RADIUS-LG) !important;
+  box-shadow: 0 0.125rem 0.5rem var(--SECONDARY_SHADOW) !important;
+  margin-top: 1.5rem !important;
+  overflow: hidden !important;
+
+  &__title {
+    font-weight: var( --FONT-WEIGHT-BOLD) !important;
+    padding: 1rem 1.5rem 0 1.5rem;
+    letter-spacing: 2px!important;  
+    margin: 0 !important;
+  }
+
+  &__content {
+    padding:0rem 1.5rem 1rem 1.5rem !important;
+   
+  }
+  &__content_items{
+    display: flex;
+    gap: 2rem;
+    border: none;
+  }
+
+  &__item {
+    // padding: 0.75rem 0.5rem !important;
+  }
+
+  &__item-text {
+    flex: none!important;
+    .MuiListItemText-primary {
+      font-size: var(--FONT-SIZE-SM) !important;
+      font-weight: var(--FONT-WEIGHT-MEDIUM) !important;
+      color:var(--BODY_TEXT1);
+    }
+
+    .MuiListItemText-secondary {
+      font-size: var(--FONT-SIZE-SM) !important;
+      font-weight:  var(--FONT-WEIGHT-NORMAL)!important;
+      color: var(--BLACK);
+    }
+  }
+
+  .MuiCheckbox-root {
+    color: var(--PRIMARY_CHECKBOX) !important;
+    padding: 0 !important;
+    margin-right: 0.75rem;
+  }
+
+  .MuiIconButton-root {
+    color:  var(--PRIMARY_BUTTON) !important;
+    // padding: 0.25rem !important;
+  }
+
+  
+}
+
+.horizontal {
+  border: .02rem solid var(--BORDER_COLOR) !important;
+  margin-top: 0;
+}
+
+.link {
+  font-size: var(--FONT-SIZE-SM)!important;
+}

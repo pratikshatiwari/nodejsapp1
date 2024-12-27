@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--SECONDARY_BACKGROUND_200);
+    height: 48px;
+    color: var(--WHITE);
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    bottom: 0;
+    width: 100%;
+}

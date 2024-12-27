@@ -1,0 +1,219 @@
+
+
+.dollarSign {
+    vertical-align: text-top; 
+}
+.imageGrid {
+    padding: 4rem 0rem
+}
+.thirdGrid{
+    padding: 1rem 0rem 1rem 3rem;
+    display: flex;
+}
+.headinggrid {
+    margin-top: 2rem;
+}
+.outerGrid {
+    margin-top:1rem;
+    padding: 1rem;
+}
+.balloonImage {
+    max-width: 100%;
+    min-height: 20.9375rem;
+    object-fit: fill;
+    object-position: top center;
+}
+.managerName {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    // color: var(--LABEL-COLOR) !important;
+}
+.managerDetail {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    // color: var(--LABEL-COLOR) !important;
+}
+
+.Totalpricetext {
+    text-align: right !important;
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    font-size: var(--vacility-line-height) !important;
+    font-family: var(--PRIMARY-FONT) !important;
+    letter-spacing: 0 !important;
+    color: var(--PRIMARY) !important;
+    opacity: 1;
+}
+
+.unique {
+    text-align: left !important;
+    font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+    font-size: var(--FONT-SIZE-H5) !important;
+    font-family: var(--PRIMARY-FONT) !important;
+    letter-spacing: 0 !important;
+    // color: var(--LABEL-COLOR) !important;
+    opacity: 1;
+    white-space: normal;       
+    word-wrap: break-word;     
+    overflow-wrap: break-word;
+}
+
+.pricetext {
+    text-align: right !important;
+    font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+    font-size: var(--FONT-SIZE-H5) !important;
+    font-family:var(--PRIMARY-FONT) !important;
+    letter-spacing: 0 !important;
+    // color: var(--LABEL-COLOR) !important;
+    opacity: 1;
+}
+
+
+.des {
+    text-align: left !important;
+    font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+    font-size: var(--FONT-SIZE-H5) !important;
+    font-family: var(--PRIMARY-FONT) !important;
+    letter-spacing: 0 !important;
+    color: var(--PLACEHOLDER_TEXT_COLOR) !important;
+    opacity: 1;
+}
+
+
+.paymentdetail {
+    text-align: left !important;
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    font-size: var(--FONT-SIZE-H5) !important;
+    font-family: var(--PRIMARY-FONT) !important;
+    letter-spacing: 0;
+    // color: var(--LABEL-COLOR) !important;
+    text-transform: capitalize !important;
+    opacity: 1;
+}
+
+.customHr {
+    border: 0.01px solid var(--BORDER_COLOR);
+    width: 100%;
+}
+.customHr1 {
+    border: 0.01px solid var(--BORDER_COLOR);
+    width: 100%;
+}
+
+.bookingTitle {
+    font-weight:  var(--FONT-WEIGHT-BOLD) !important;
+    color: var(--PRIMARY) !important;
+}
+
+.bookingDescription {
+    font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+}
+
+
+.buttonText {
+    text-align: left;
+    font-family: var(--PRIMARY-FONT) !important;
+    font-size: var(--button-text-size) !important;
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    color: var(--PRIMARY_ICON_COLOR) !important;
+    opacity: 1;
+}
+
+.innerGrid {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; 
+    align-items: flex-start;
+    padding: 0.5rem;
+}
+
+
+.image {
+  width: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .7rem;
+    gap : 1rem;
+}
+
+
+.buttonContainer {
+    gap: .5;
+}
+
+.button {
+    width: 100%;
+    padding: 1rem 0 !important;
+}
+
+
+
+.bookingCode {
+    text-transform: uppercase !important;
+}
+
+.bookingheading {
+    font-weight:  var(--FONT-WEIGHT-BOLD) !important;
+    letter-spacing: 0.3125rem !important;
+    color: var(--PRIMARY_HEADING_TEXT) !important;
+    text-transform: uppercase !important;
+}
+
+.bookingAddress {
+    font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+    letter-spacing: 0.04375rem !important;
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.vacility {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    letter-spacing:  0.0875rem !important;
+}
+
+
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem 0; 
+}
+
+.cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 0;
+}
+
+
+.infoItem {
+    text-align: start;
+}
+
+
+
+.labelText {
+    font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+    color: var(--PLACEHOLDER_TEXT_COLOR) !important;
+}
+
+.valueText {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+
+    // color: var(--VALUE-COLOR) !important;
+}
+
+
+.managerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem 2rem 1rem;
+}

@@ -1,0 +1,88 @@
+.activities-and-service-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  outline: none;
+}
+
+.activities-and-service {
+  &__header {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 24px !important;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+
+  &__search {
+    width: 100%;
+
+    .MuiOutlinedInput-root {
+      border-radius: 20px;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #e0e0e0;
+    }
+
+    .MuiInputAdornment-root {
+      color: #2D3DDF;
+    }
+  }
+
+  &__search-button {
+    background-color: #2D3DDF;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+
+    &:hover {
+      background-color: darken(#2D3DDF, 10%);
+    }
+  }
+
+  &__close-button {
+    color: #666;
+  }
+
+  &__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  &__filter-chip {
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &--active {
+      background-color: #2D3DDF;
+      color: white;
+    }
+  }
+
+  &__tours {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+  }
+}

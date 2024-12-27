@@ -1,0 +1,33 @@
+.payment-methods {
+  margin-bottom: 1.5rem;
+
+  &__tabs {
+    border-bottom: 1px solid var(--BORDER_COLOR);
+    min-height: 3rem;
+    
+    .MuiTabs-indicator {
+      background-color: var(--PRIMARY);
+    }
+  }
+
+  &__tab {
+    
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem;
+    text-transform: none !important;
+    font-size: var(--FONT-SIZE-SM) !important;
+    font-weight: var(--FONT-WEIGHT-MEDIUM) !important;
+    min-height: 3rem !important;
+    padding: 0.375rem 1rem !important;
+
+    &.Mui-selected {
+      color: var(--PRIMARY) !important;
+    }
+
+    .MuiSvgIcon-root {
+      font-size: var(--FONT-SIZE-LG) !important;
+      margin-bottom: 0.25rem !important;
+    }
+  }
+}

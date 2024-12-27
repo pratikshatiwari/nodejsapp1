@@ -1,0 +1,66 @@
+.room-card {
+  display: flex;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+ height: 80%;
+  &--selected {
+    border: 2px solid #1976d2;
+  }
+
+  &__selected-label {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__media {
+    width: 250px;
+    object-fit: cover;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+  }
+
+  &__amenities {
+    color: #1976d2;
+  }
+
+  &__price-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  &__actions {
+    display: flex;
+  }
+}
+
+.room-list {
+  &__title {
+  }
+}

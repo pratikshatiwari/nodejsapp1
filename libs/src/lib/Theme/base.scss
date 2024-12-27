@@ -1,0 +1,14 @@
+body{
+    color: var(--TEST_COLOR_2);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--TEST_COLOR_1);
+    text-transform: capitalize;  
+}
+
+.content-visible {
+    display: block;
+}
+.content-hidden {
+    display: none;
+}

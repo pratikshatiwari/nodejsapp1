@@ -1,0 +1,163 @@
+
+.head {
+  position: relative !important;
+  // height: 23.375rem !important;
+  padding: 0rem 0.5rem 0rem .5rem !important;
+}
+
+.title {
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  // color: var(--LABEL-COLOR) !important;
+  text-transform: uppercase !important;
+}
+
+.questionsList {
+ padding: 2% 0!important;
+}
+
+.commonheading {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  background: var(--WHITE) !important;
+  box-shadow: 0rem 0.375rem 0.75rem var(--PRIMARY_SHADOW) !important;
+  border-radius: var(--BORDER-RADIUS-MD) !important;
+  opacity: 1 !important;
+  margin-bottom: 1.25rem !important;
+  padding: 0.9375rem !important;
+}
+
+.questionText {
+  text-align: left !important;
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  font-size: var(--FONT-SIZE-H4) !important;
+  line-height: 1.25rem !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  // color: var(--LABEL-COLOR) !important;
+}
+
+.divider {
+  background-color: var(--BORDER_COLOR_100) !important;
+  height: 0.0625rem !important;
+  border: none !important;
+  margin-top: 1rem !important;
+}
+
+.section {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.customerName {
+  margin-left: 0.625rem !important;
+  text-align: left !important;
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  font-size: var(--FONT-SIZE-H4) !important;
+  line-height: 1.25rem !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  // color: var(--LABEL-COLOR) !important;
+}
+
+.customerLabel {
+  text-align: left !important;
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  font-size: var(--FONT-SIZE-H4) !important;
+  line-height: 1.25rem !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  color:  var(--PLACEHOLDER_TEXT_COLOR)  !important;
+  margin-left: 0.625rem  !important;
+}
+
+.answerButton {
+  margin-left: auto !important;
+  width: 12.375rem !important; /* 198px = 198 ÷ 16 */
+  height: 3.125rem !important; /* 50px = 50 ÷ 16 */
+  text-align: center !important;
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  font-size: var(--FONT-SIZE-H4) !important;
+  line-height: 1.5625rem !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  letter-spacing: 0rem !important;
+  color: var(--PRIMARY) !important;
+  background-color: transparent !important;
+  border: 0.0625rem solid var(--PRIMARY_BORDER) !important;
+  border-radius: var(--BORDER-RADIUS-MD) !important;
+  opacity: 1 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+// Heading 3 box styling
+.heading3 {
+  position: relative !important;
+  display: flex !important;
+  width: 100% !important;
+  height: 3rem !important;
+  background: var(--WHITE) 0% 0% no-repeat padding-box !important;
+  box-shadow: 0rem 0.375rem 0.75rem var(--PRIMARY_SHADOW) !important;
+  border-radius: var(--BORDER-RADIUS-XXS) !important;
+  opacity: 1 !important;
+  padding: 0rem 1rem;
+  align-items: center;
+}
+
+// Sub-elements of heading3
+.bb1 {
+  // position: relative !important;
+  // top: 0.8125rem !important;
+}
+
+.bb2 {
+  // position: relative !important;
+  // top: 0.8125rem !important;
+}
+
+.bb3 {
+  // top: 0.8125rem !important;
+  margin-left: auto;
+}
+
+// Button styling in bb3
+.askButton {
+  // text-align: center !important;
+  font: normal normal var(--FONT-WEIGHT-BOLD) var(--FONT-SIZE-H4) var(--PRIMARY-FONT) !important;
+  letter-spacing: 0rem !important;
+  color: var(--PRIMARY) !important;
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: var(--BORDER-RADIUS-MD) !important;
+  opacity: 1 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+// Image container styling
+.img {
+  width: 1.5rem !important;
+  margin-right: 0.625rem !important;
+}
+
+// Btn11 styling
+.btn11 {
+  box-shadow: none !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin-left: auto !important;
+}
+
+// Typography in heading3 section
+.questionPrompt {
+  text-align: left !important;
+  font: normal normal normal var(--FONT-SIZE-H4)/1.625rem var(--PRIMARY-FONT) !important;
+  letter-spacing: 0rem !important;
+  // color: var(--LABEL-COLOR) !important;
+}
+
+.answerPrompt {
+  text-align: left !important;
+  font: normal normal normal var(--FONT-SIZE-H4)/1.625rem var(--PRIMARY-FONT) !important;
+  letter-spacing: 0rem !important;
+  color: var(--PLACEHOLDER_TEXT_COLOR) !important;
+}

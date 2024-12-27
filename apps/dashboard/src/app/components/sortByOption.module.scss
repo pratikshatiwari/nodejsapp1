@@ -1,0 +1,154 @@
+
+.container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: auto;
+    width: 30%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    z-index: 10;
+    background-color: #fff;
+  }
+  
+  .header {
+    text-align: left;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+  }
+  
+  .optionsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .optionBox {
+    flex: 1;
+    height: 72px;
+    background: #fafafa;
+    border: 0.3px solid #707070;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .option{
+    background: #fafafa;
+    border: 0.3px solid #707070;
+    border-radius: 8px;
+    opacity: 1;
+    gap: 3.5rem;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  .option1 {
+    display: flex;
+    // justify-content: space-between; 
+    width: 100%;
+    align-items: end; 
+    margin-bottom: 8px; 
+    gap: 1px; 
+  }
+  .arrows {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centeredContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    text-align: center;
+  }
+  
+  .optionText {
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #242424;
+    opacity: 0.8;
+  }
+  
+  .sectionTitle {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Poppins;
+    color: #000000;
+    opacity: 1;
+  }
+  
+  .imageList {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .imageBox {
+    text-align: center;
+  }
+  
+  .image {
+    height: 75px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageLabel {
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 500;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  
+  .typeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .typeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 8%;
+  }
+  
+  .typeImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .typeLabel {
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 400;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #2D3DDF;
+    opacity: 1;
+  }
+  

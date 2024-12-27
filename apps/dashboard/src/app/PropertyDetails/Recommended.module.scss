@@ -1,0 +1,65 @@
+
+
+.container {
+    margin-bottom: 3.75rem; /* 60px */
+    margin-left: 1.875rem; /* 30px */
+  }
+  
+  .header {
+    margin-bottom: 1.25rem;
+  }
+  
+  .title {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    color: var(--PRIMARY_HEADING_TEXT) !important;
+    margin-bottom: 1rem !important;
+    letter-spacing: .25rem !important;
+  }
+  
+  .tabs {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 1%;
+    border-bottom: 0.125rem solid transparent !important;
+    &.active {
+        border-bottom-color: var(--PRIMARY_BORDER) !important;
+      }
+      img {
+        margin-right: 0.5rem; /* 8px */
+      }
+      p {
+        text-align: left;
+        font-size: var(--FONT-SIZE-H3) !important;
+        font-weight: var(--FONT-WEIGHT-MEDIUM) !important;
+        font-family: var(--PRIMARY-FONT) !important;
+        color: var(--PLACEHOLDER_TEXT_COLOR) !important;
+      }
+    }
+
+
+  .viewMore {
+  margin-left: auto;
+  margin-right: 1.875rem; /* 30px */
+  text-align: right;
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  font-size: var(--FONT-SIZE-SM) !important;
+  line-height: var(--LINE-HEIGHT-XS) !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  color: var(--PRIMARY_LINK) !important;
+}
+  
+.lastMinuteOffer {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    font-size: var(--FONT-SIZE-H2) !important;
+    line-height: 6rem;
+    font-family: var(--PRIMARY-FONT) !important;
+    letter-spacing: 0.25rem !important;
+    color: var(--PRIMARY_HEADING_TEXT) !important;
+  }
+  

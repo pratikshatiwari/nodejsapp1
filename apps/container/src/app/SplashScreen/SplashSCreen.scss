@@ -1,0 +1,28 @@
+.logo-image {
+    width: 25%;
+  }
+ 
+  .typography-title {
+    margin-top: 2rem;
+    letter-spacing: 8px;
+    color: var(--WHITE);
+  }
+ 
+ 
+.progress-container {
+    width: 80%;
+    margin-top: 2rem;
+ 
+    .linear-progress {
+      width: 25%;
+      margin: auto;
+      margin-top: 1.5rem;
+ 
+      background-color: var(--SECONDARY_BACKGROUND_100);
+ 
+      & .MuiLinearProgress-bar {
+        background-color: var(--WHITE);
+      }
+    }
+  }
+ 

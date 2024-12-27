@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="22" viewBox="0 0 92 22">
+  <g id="Group_919" data-name="Group 919" transform="translate(-164 -489)">
+    <g id="Rectangle_585" data-name="Rectangle 585" transform="translate(164 489)" fill="#ffebd0" stroke="#ff5900" stroke-width="1">
+      <rect width="92" height="22" rx="11" stroke="none"/>
+      <rect x="0.5" y="0.5" width="91" height="21" rx="10.5" fill="none"/>
+    </g>
+    <text id="Top_Booked" data-name="Top Booked" transform="translate(210 504)" fill="#ff5900" font-size="12" font-family="Poppins-SemiBold, Poppins" font-weight="600" opacity="0.8"><tspan x="-35" y="0">Top Booked</tspan></text>
+  </g>
+</svg>

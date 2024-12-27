@@ -1,0 +1,11 @@
+.payment-details {
+  background: var(--WHITE);
+  // border-radius: var(--BORDER-RADIUS-LG);
+  // box-shadow: 0 0.125rem 0.5rem var(--SECONDARY_SHADOW);
+
+  &__title {
+    font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    margin-bottom: 1.5rem !important;
+    letter-spacing: .25rem;
+  }
+}

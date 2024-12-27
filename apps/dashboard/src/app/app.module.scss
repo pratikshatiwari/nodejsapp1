@@ -1,0 +1,20 @@
+/* Your styles goes here. */
+.appContainer {
+    max-width: 1280px;
+    width: 1280px;
+    margin: auto;
+  }
+  
+  .headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+  }
+  .mainContent {
+    margin-top: 26.875rem;
+    height: 100%;
+  }
+  

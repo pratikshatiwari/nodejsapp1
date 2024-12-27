@@ -1,0 +1,188 @@
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.imagecontainer {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--BORDER-RADIUS-MD);
+  overflow: hidden;
+}
+
+
+.mainimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--BORDER-RADIUS-MD);
+}
+
+.overlayicon {
+  position: absolute;
+  top: 0.625rem;
+  right: 1.25rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: var(--BORDER-RADIUS-MD);
+  z-index: 1;
+}
+
+.overlaybox {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+  height: 40%;
+  background-color: var(--PRIMARY_OVERLAY_COLOR);
+  border-radius: var(--BORDER-RADIUS-MD);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.overlayimage {
+  opacity: 1;
+  /* Further styles if required */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contentBox {
+  width: 100%;
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.propertyName {
+  font-size: var(--FONT-SIZE-XL) !important;
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  letter-spacing: 0.3125rem !important;
+  color: var(--HEADING_TEXT) !important;
+  text-transform: uppercase !important;
+}
+
+.badgeIcon {
+  margin-left: 0.5rem;
+  /* 8px */
+}
+
+.location {
+  font-size: var(--FONT-SIZE-MD);
+  font-weight: var(--FONT-WEIGHT-NORMAL);
+  color: var(--LABEL_COLOR);
+}
+
+.details {
+  font-weight: var(--FONT-WEIGHT-BOLD)!important;
+  letter-spacing: 1.4px !important;
+  color: var(--BODY_TEXT) !important;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.ratingValue {
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  font-size: var(--FONT-SIZE-LG) !important;
+  letter-spacing: 0.15rem !important;
+  color: var(--BODY_TEXT) !important;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  cursor: pointer;
+  margin-right: 0.3125rem;
+  width: 0.4rem;
+}
+
+.reviews {
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  font-size: var(--FONT-SIZE-LG) !important;
+}
+
+.reviewText {
+  font-weight: var(--FONT-WEIGHT-MEDIUM) !important;
+  font-size: var(--FONT-SIZE-SM) !important;
+}
+
+.detailsRow {
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+
+.detailLabel {
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  color: var(--BODY_TEXT1) !important;
+}
+
+.detailValue {
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  color: var(--VALUE_COLOR) !important;
+}
+
+.activitybuttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.buttonPrimary,.buttonSecondary {
+  letter-spacing: .088rem !important;
+  height: 3.5rem;
+  width: 50%;
+}
+
+.priceRow {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.priceText {
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  font-size: var(--FONT-SIZE-H5) !important;
+  color: var(--VALUE_COLOR) !important;
+}
+
+.totalPrice {
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  font-size: var(--FONT-SIZE-XL) !important;
+  color: var(--VALUE_COLOR) !important;
+}

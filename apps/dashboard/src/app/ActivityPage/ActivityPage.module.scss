@@ -1,0 +1,34 @@
+
+
+.customHr {
+  border: 0.003125rem solid var(--BORDER_COLOR_100);
+  width: 100%;
+}
+
+.sectionContainer {
+  margin-top: 2.5rem; 
+}
+
+.headerContainer {
+  margin-bottom: 0.625rem;
+}
+
+.title {
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  // color:var(--DARK-SHADOW-COLOR) !important;
+  text-transform: uppercase;
+}
+
+.subtitle {
+ 
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  // color:var(--DARK-SHADOW-COLOR) !important;
+}
+
+
+.cartbutton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}

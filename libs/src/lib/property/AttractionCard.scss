@@ -1,0 +1,63 @@
+.attraction-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    &__overlay {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      padding: 12px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      width: fit-content;
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 4px;
+    }
+  
+    &__rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+  
+      .MuiRating-root {
+        color: #ffc107;
+      }
+    }
+  
+    &__rating-value {
+      color: #666;
+      margin-left: 4px;
+      font-weight: 500;
+    }
+  
+    &__price {
+      color: #333;
+      font-weight: 500;
+    }
+  }
+  
+  .attraction-card-grid {
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: auto auto;
+    gap: 24px;
+    padding: 24px;
+  }

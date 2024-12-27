@@ -1,0 +1,59 @@
+.outerbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mapclass {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.locateUsTitle {
+  margin-left: 1.875rem !important;
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  font-size: var(--FONT-SIZE-H2) !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  letter-spacing: 0.25rem !important;
+  color: var(--PRIMARY_HEADING_TEXT) !important;
+  text-transform: uppercase !important;
+}
+
+
+.thingsToDoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 0 2rem 0;
+}
+
+.sectionTitle {
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  letter-spacing: 0.25rem !important;
+  color: var(--PRIMARY_HEADING_TEXT) !important;
+  text-transform: uppercase !important;
+}
+
+.sectionSubtitle {
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  color: var(--PRIMARY_HEADING_TEXT) !important;
+}
+
+.vacationpageclass {
+  margin-top: 2rem;
+}
+
+.roomsectionclass {
+  margin-top: 2rem;
+}
+
+.managerclass {
+  margin-bottom: 2rem;
+}
+
+
+.hrclass {
+  border:  0.03125rem  solid var(--BORDER_COLOR) !important;
+  margin-top: 1.5rem !important;
+}

@@ -1,0 +1,30 @@
+.success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--PRIMARY_BACKGROUND_100);
+  
+    &__icon {
+      font-size: var(--FONT-SIZE-XXXL) !important;
+      color: var(--GREEN_TEXT);
+      margin-bottom: 1.5rem;
+    }
+  
+    &__title {
+      margin-bottom: 1rem !important;
+      color: var(--BODY_TEXT1);
+    }
+  
+    &__message {
+      margin-bottom: 2rem !important;
+      color: var(--BODY_TEXT1);
+    }
+  
+    &__button {
+      padding: 0.75rem 1.5rem !important;
+  
+    
+    }
+  }

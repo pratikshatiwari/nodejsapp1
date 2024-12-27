@@ -1,0 +1,234 @@
+
+  .container{
+
+    margin-top: 3rem;
+  }
+  .head1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 .5rem;
+  }
+  .head2 {
+    display: flex;
+    padding: 0 .5rem;
+    min-height: 19rem;
+  }
+  
+  .card {
+    position: relative;
+    margin-top: 2rem;
+    width: 24rem;
+    background: var(--PRIMARY_BACKGROUND) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 12px 24px var(--PRIMARY_SHADOW);
+    border-radius: var(--BORDER-RADIUS-LG);
+    opacity: 1;
+  }
+  
+  .card .image1 {
+    position: relative;
+    left: 6%;
+    top: 12%;
+  }
+  
+  .profilename,
+  .review,
+  .rating,
+  .year {
+    position: absolute;
+  }
+  
+  .profilename {
+    left: 6%;
+    top: 70%;
+  }
+  
+  .review {
+    left: 60%;
+    top: 10%;
+  }
+  .rating {
+    left: 65%;
+    top: 40%;
+  }
+  .year {
+    left: 60%;
+    top: 70%;
+  }
+  
+  .card1 {
+    position: relative;
+    width: 70%;
+    left: 4%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+
+
+@media (max-width: 1200px) {
+  .card {
+    width: 40%;
+  }
+
+  .card1 {
+    width: 60%;
+  }
+
+  .profilename,
+  .review,
+  .rating,
+  .year {
+    font-size: var(--FONT-SIZE-H2); /* Adjust text size */
+  }
+
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 40%;
+  }
+
+  .card1 {
+    width: 60%;
+  }
+
+
+  .profilename,
+  .review,
+  .rating,
+  .year {
+    font-size: var(--FONT-SIZE-H3);
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 40%;
+  }
+
+  .card1 {
+    width: 60%;
+  }
+
+
+  .profilename,
+  .review,
+  .rating,
+  .year {
+    font-size: var(--FONT-SIZE-H4);
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 40%;
+  }
+
+  .card1 {
+    width: 60%;
+  }
+
+
+  .profilename,
+  .review,
+  .rating,
+  .year {
+    font-size: var(--FONT-SIZE-SM);
+  }
+
+}
+
+
+
+.headtext {
+  font-weight:  var(--FONT-WEIGHT-BOLD) !important;
+  letter-spacing: 0.25rem !important;
+  // color: var(--LABEL-COLOR) !important;
+  text-transform: uppercase !important;
+}
+
+
+.profilename-name {
+  text-align: left !important;
+  font-weight: var(--FONT-WEIGHT-BOLD) !important;
+  font-size: var(--FONT-SIZE-LG) !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  letter-spacing: 0 !important;
+  color: var(--BODY_TEXT) !important;
+}
+
+.profilename-role {
+  text-align: left !important;
+  font-weight: var(--FONT-WEIGHT-NORMAL) !important;
+  font-size: var(--FONT-SIZE-H4) !important;
+  font-family: var(--PRIMARY-FONT) !important;
+  letter-spacing: 0 !important;
+  color: var(--BODY_TEXT) !important;
+}
+
+.review-number,
+.rating-number,
+.year-number {
+  text-align: center !important;
+  font-weight: var(--FONT-WEIGHT-MEDIUM) !important;
+  font-size: var(--FONT-SIZE-XXL) !important;
+  font-family: var(--PRIMARY-FONT) !important;
+ 
+  color: var(--BLACK) !important;
+  opacity: 1 !important;
+}
+
+.review-text,
+.rating-text,
+.year-text {
+  text-align: left !important;
+  font-weight: var(--FONT-WEIGHT-MEDIUM) !important;
+  font-size: var(--FONT-SIZE-XS) !important;
+  font-family: var(--PRIMARY-FONT) !important;
+
+  // color: var(--BLACK-COLOR-1) !important;
+  opacity: 1 !important;
+}
+
+.card1-name {
+  font-weight:  var(--FONT-WEIGHT-BOLD)  !important;
+  // color: var(--LABEL-COLOR) !important;
+  text-transform: capitalize !important;
+}
+
+.card1-about {
+  text-align: left !important;
+  font: normal normal var(--FONT-WEIGHT-NORMAL) var(--FONT-SIZE-SM) var(--PRIMARY-FONT) !important;
+  // color: var(--LABEL-COLOR) !important;
+  opacity: 1 !important;
+  width: 60% !important;
+}
+
+.card1-detail-title {
+  font-weight:  var(--FONT-WEIGHT-BOLD)  !important;
+  // color: var(--LABEL-COLOR) !important;
+  text-transform: capitalize !important;
+}
+
+.card1-detail {
+  text-align: left !important;
+  font: normal normal var(--FONT-WEIGHT-NORMAL) var(--FONT-SIZE-SM)  var(--PRIMARY-FONT) !important;
+  // color: var(--LABEL-COLOR) !important;
+  opacity: 1 !important;
+  max-width: 40rem;
+}
+
+
+
+
+
+.btn {
+  letter-spacing: 0.088rem !important;
+  max-width: 14rem !important;
+}

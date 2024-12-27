@@ -1,0 +1,99 @@
+.secure-footer {
+  margin-top: 1.5rem;
+  background:var(--WHITE);
+  border-radius: var(--BORDER-RADIUS-LG);
+  padding: 1.25rem;
+  box-shadow: 0 0.125rem 0.5rem var(--SECONDARY_SHADOW);
+
+  &__title {
+    // text-align: center;
+    margin-bottom: .5rem !important;
+      font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    
+  }
+
+  &__checks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  &__items {
+    display: flex ;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    .MuiTypography-root {
+      font-size: var(--FONT-SIZE-XXS);
+      color: var(--BODY_TEXT1);
+    }
+  }
+
+  &__check-icon {
+    color:var(--GREEN-COLOR);
+    font-size: 1rem!important;
+  }
+
+  &__divider {
+    height: 0.0625rem;
+    background-color: var(--PRIMARY_BACKGROUND_100);
+    margin: 1rem 0;
+  }
+
+}
+
+.secure-policy{
+  margin-top: 1.5rem;
+  background:var(--WHITE);
+  border-radius: var(--BORDER-RADIUS-LG);
+  padding: 1.25rem;
+  box-shadow: 0 0.125rem 0.5rem var(--SECONDARY_SHADOW);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+
+    .MuiTypography-root {
+      font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    }
+  }
+
+  &__more {
+    font-size: var(--FONT-SIZE-XS) !important;
+    color:var(--PRIMARY) !important;
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  &__booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__booking-label {
+    .MuiTypography-root {
+      font-size: var(--FONT-SIZE-XS) !important;
+      font-weight: var(--FONT-WEIGHT-BOLD) !important;
+    }
+  }
+
+  &__email {
+    align-self: end;
+    font-size: var(--FONT-SIZE-XS) !important;
+  }
+
+  &__copyright {
+    font-size: var(--FONT-SIZE-XS) !important;
+    color: var(--BODY_TEXT1);
+    text-align: center;
+    margin-top: 1.5rem !important;
+  }
+}
