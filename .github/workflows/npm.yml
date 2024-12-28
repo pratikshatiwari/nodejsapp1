@@ -43,12 +43,12 @@ jobs:
         run: cat dist/apps/checkout/index.html
 
 
-      # - name: Deploy to Azure Static Web Apps
-      #   uses: Azure/static-web-apps-deploy@v1
-      #   with:
-      #     azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-      #     deployment_action: "upload"  
-      #     app_location: "apps/checkout"            # Adjust if your app is in a subfolder
-      #     # output_location: "build"     # Adjust if your build folder has a different name
-      #     output_location: "dist/apps/checkout" # Build output folder
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          deployment_action: "upload"  
+          app_location: "dist/apps/checkout"            # Adjust if your app is in a subfolder
+           # output_location: "build"     # Adjust if your build folder has a different name
+          output_location: "dist/apps/checkout" # Build output folder
 
