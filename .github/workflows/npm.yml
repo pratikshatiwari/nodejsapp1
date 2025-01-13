@@ -1,43 +1,55 @@
-name: Node.js Application with GitHub Secrets
+name: Node.js CI
 
 on:
   push:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 
 jobs:
-  build-and-run:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js
-      - name: Set up Node.js
+      - name: Use Secret Key
+        run: echo "The secret key is ${{ secrets.API_KEY }}"
+        
+      - name: Set up Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: '20' # Specify the Node.js version
+          node-version: 20
 
-      # Step 3: Install dependencies
+      # - name: Install dependencies
+      #   run: npm install
+
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
-
-      - name: Print environment variables
-        run: printenv
-
-      # Run Application
-      - name: Run application
+        run: |
+          npm install --legacy-peer-deps
+          npm install -g nx
+      # Step 4: Build the application (if applicable)
+      - name: Build application
+        run: |
+          npx nx run property:build
+          #npx nx run checkout:build
+          # npx nx run dashboard:build
         env:
-          API_KEY: ${{ secrets.API_KEY }}
-        run: node --inspect-brk index.js &
-        
+          NODE_ENV: production
+          REACT_APP_API_KEY: ${{ secrets.API_KEY }}
 
-      # UpLoad Loga
-      - name: Upload logs
-        uses: actions/upload-artifact@v3
+      # - name: Verify index.html Content
+      #   run: cat dist/apps/checkout/index.html
+
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
         with:
-          name: secret-scan-logs
-          path: app.log
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          deployment_action: "upload"  
+          app_location: "dist/apps/property"            # Adjust if your app is in a subfolder
+           # output_location: "build"     # Adjust if your build folder has a different name
+          output_location: "dist/apps/checkout" # Build output folder
