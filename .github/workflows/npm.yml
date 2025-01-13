@@ -1,54 +1,43 @@
-name: Node.js CI
+name: Node.js Application with GitHub Secrets
 
 on:
   push:
     branches:
       - main
   pull_request:
-    branches:
-      - main
 
 jobs:
-  build:
+  build-and-run:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js 20
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: '20' # Specify the Node.js version
 
-      # - name: Install dependencies
-      #   run: npm install
-
+      # Step 3: Install dependencies
       - name: Install dependencies
-        run: |
-          npm install --legacy-peer-deps
-          npm install -g nx
+        run: npm install --legacy-peer-deps
 
+      - name: Print environment variables
+        run: printenv
 
-      # Step 4: Build the application (if applicable)
-      - name: Build application
-        run: |
-          npx nx run property:build
-          npx nx run checkout:build
-          # npx nx run dashboard:build
+      # Run Application
+      - name: Run application
         env:
-          NODE_ENV: production
+          API_KEY: ${{ secrets.API_KEY }}
+        run: node --inspect-brk index.js &
+        
 
-      - name: Verify index.html Content
-        run: cat dist/apps/checkout/index.html
-
-
-      - name: Deploy to Azure Static Web Apps
-        uses: Azure/static-web-apps-deploy@v1
+      # UpLoad Loga
+      - name: Upload logs
+        uses: actions/upload-artifact@v3
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          deployment_action: "upload"  
-          app_location: "dist/apps/property"            # Adjust if your app is in a subfolder
-           # output_location: "build"     # Adjust if your build folder has a different name
-          output_location: "dist/apps/checkout" # Build output folder
-
+          name: secret-scan-logs
+          path: app.log
