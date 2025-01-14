@@ -41,6 +41,11 @@ jobs:
           NODE_ENV: production
           REACT_APP_API_KEY: ${{ secrets.API_KEY }}
 
+      - name: Use GitHub Secret Token
+        env:
+          GITHUB_SECRET: ${{ secrets.GIT_TOKEN }}
+        run: echo "Using GitHub Secret Token for tasks"
+
       # - name: Verify index.html Content
       #   run: cat dist/apps/checkout/index.html
 
