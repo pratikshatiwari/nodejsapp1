@@ -1,0 +1,28 @@
+name: NPM Build with GitHub App Authentication
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Generate GitHub App JWT
+      id: jwt
+      run: |
+        echo ${{ secrets.APP_PRIVATE_KEY }} | base64 -d > app_key.pem
+        jwt=$(node -e "const fs = require('fs'); const jwt = require('jsonwebtoken'); const appId = ${secrets.APP_ID}; const privateKey = fs.readFileSync('app_key.pem'); const payload = { iat: Math.floor(Date.now() / 1000), exp: Math.floor(Date.now() / 1000) + 600, iss: appId }; console.log(jwt.sign(payload, privateKey, { algorithm: 'RS256' }));")
+        echo "jwt=$jwt" >> $GITHUB_ENV
+
+    
