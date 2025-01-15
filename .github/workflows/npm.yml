@@ -43,7 +43,7 @@ jobs:
           # npx nx run dashboard:build
         env:
           NODE_ENV: production
-          REACT_APP_API_KEY: ${{ secrets.API_KEY }}
+          REACT_APP_API_KEY: ${{ secrets.GIT_TOKEN }}
 
       - name: Use GitHub Secret Token
         env:
